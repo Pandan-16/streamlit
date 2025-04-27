@@ -45,8 +45,8 @@ st.subheader(f'Map of all pickups at {hour_to_filter}:00')
 st.map(filtered_data)
 
 #Exercise 
-#1. Convert 2D map to 3D map usind PyDeck
-st.subheader('Convert 2D mao to 3D map usind PyDeck')
+#1. Convert 2D map to 3D map using PyDeck
+st.subheader('Convert 2D map to 3D map using PyDeck')
 import streamlit as st
 import pandas as pd
 import numpy as np
