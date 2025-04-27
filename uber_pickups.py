@@ -45,7 +45,8 @@ st.subheader(f'Map of all pickups at {hour_to_filter}:00')
 st.map(filtered_data)
 
 #Exercise 
-#1. Convert 2D mao to 3D map usind PyDeck
+#1. Convert 2D map to 3D map usind PyDeck
+st.subheader('1. Convert 2D mao to 3D map usind PyDeck')
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -147,17 +148,6 @@ if st.checkbox('Show dataframe'):
     chart_data
 
 #4. Use plotly (any charts)
-#5. Click a button to increase the number in the following message, "This page has run 24 times"
-import streamlit as st
-
-if "counter" not in st.session_state:
-    st.session_state.counter = 0
-
-st.session_state.counter += 1
-
-st.header(f"This page has run {st.session_state.counter} times.")
-st.button("Run it again")
-
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -169,3 +159,17 @@ st.header("Choose a datapoint color")
 color = st.color_picker("Color", "#FF0000")
 st.divider()
 st.scatter_chart(st.session_state.df, x="x", y="y", color=color)
+
+
+#5. Click a button to increase the number in the following message, "This page has run 24 times"
+import streamlit as st
+
+if "counter" not in st.session_state:
+    st.session_state.counter = 0
+
+st.session_state.counter += 1
+
+st.header(f"This page has run {st.session_state.counter} times.")
+st.button("Run it again")
+
+
