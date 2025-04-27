@@ -135,6 +135,17 @@ else:
 
 
 #3. Use Selectbox
+import streamlit as st
+import numpy as np
+import pandas as pd
+
+if st.checkbox('Show dataframe'):
+    chart_data = pd.DataFrame(
+       np.random.randn(20, 3),
+       columns=['a', 'b', 'c'])
+
+    chart_data
+
 #4. Use plotly (any charts)
 #5. Click a button to increase the number in the following message, "This page has run 24 times"
 import streamlit as st
