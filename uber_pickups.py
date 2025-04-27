@@ -46,7 +46,7 @@ st.map(filtered_data)
 
 #Exercise 
 #1. Convert 2D map to 3D map usind PyDeck
-st.subheader('1. Convert 2D mao to 3D map usind PyDeck')
+st.subheader('Convert 2D mao to 3D map usind PyDeck')
 import streamlit as st
 import pandas as pd
 import numpy as np
